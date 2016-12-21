@@ -1,6 +1,6 @@
 # Ejercicio Monkey-Trouble
 
-Inicio: Monkey Trouble
+*Inicio: Monkey Trouble*
 
 ## Ingreso datos
 - aSmile

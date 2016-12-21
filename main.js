@@ -9,19 +9,21 @@ function Mostrar()
 	var  valoraSmile=aSmile.value;
 	var  valorbSmile=bSmile.value;
 
+valoraSmile.toLowerCase()
+
 	if(valoraSmile == "" || valorbSmile == "" )
 	{
 
 		salida.innerHTML = "--";
 		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">Responde todas las preguntas</div>';
 	}
-	else if(valoraSmile !="si" && valoraSmile != "no" || valorbSmile != "si" && valorbSmile != "no" )
+	else if(valoraSmile.toLowerCase() !="si" && valoraSmile.toLowerCase() != "no" || valorbSmile.toLowerCase() != "si" && valorbSmile.toLowerCase() != "no" )
 	{
 
 		salida.innerHTML = "--";
 		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">Valores Incorrectos</div>';
 	}
-	else if(valoraSmile == "si" && valorbSmile == "si" || valoraSmile == "no" && valorbSmile == "no" )
+	else if(valoraSmile.toLowerCase() == "si" && valorbSmile.toLowerCase() == "si" || valoraSmile.toLowerCase() == "no" && valorbSmile.toLowerCase() == "no" )
 	{
 
 		salida.innerHTML = "1";
