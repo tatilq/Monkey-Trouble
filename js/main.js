@@ -13,7 +13,6 @@ valoraSmile.toLowerCase()
 
 	if(valoraSmile == "" || valorbSmile == "" )
 	{
-
 		salida.innerHTML = "--";
 		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">Responde todas las preguntas</div>';
 	}
@@ -23,7 +22,7 @@ valoraSmile.toLowerCase()
 		salida.innerHTML = "--";
 		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">Valores Incorrectos</div>';
 	}
-	else if(valoraSmile.toLowerCase() == "si" && valorbSmile.toLowerCase() == "si" || valoraSmile.toLowerCase() == "no" && valorbSmile.toLowerCase() == "no" )
+	else if(valoraSmile.toLowerCase() == "si" && valorbSmile.toLowerCase() == "si" )|| valoraSmile.toLowerCase() == "no" && valorbSmile.toLowerCase() == "no" )
 	{
 
 		salida.innerHTML = "1";
