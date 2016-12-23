@@ -21,7 +21,7 @@ valoraSmile.toLowerCase()
 	{
 
 		salida.innerHTML = "--";
-		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">Valores Incorrectos</div>';
+		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">Valores Incorrectos/Responde "SI" ó "NO"</div>';
 	}
 	else if(valoraSmile.toLowerCase() == "si" && valorbSmile.toLowerCase() == "si" || valoraSmile.toLowerCase() == "no" && valorbSmile.toLowerCase() == "no" )
 	{
@@ -32,7 +32,8 @@ valoraSmile.toLowerCase()
 	else 
 	{
 		salida.innerHTML = "0";
-		document.getElementById("mensajes").innerHTML = '<div class="alert">No hay Problemas</div>';
+		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">No hay Problemas</div>';
+		document.getElementById("mono2").innerHTML = '<img src="images/monofeliz.png" alt="">';
 
 	}
 
